@@ -1,0 +1,7 @@
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Struct_Reference_Type\bin\Debug\Struct_Reference_Type.exe.config
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Struct_Reference_Type\bin\Debug\Struct_Reference_Type.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Struct_Reference_Type\bin\Debug\Struct_Reference_Type.pdb
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Struct_Reference_Type\obj\Debug\Struct_Reference_Type.csprojAssemblyReference.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Struct_Reference_Type\obj\Debug\Struct_Reference_Type.csproj.CoreCompileInputs.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Struct_Reference_Type\obj\Debug\Struct_Reference_Type.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Struct_Reference_Type\obj\Debug\Struct_Reference_Type.pdb

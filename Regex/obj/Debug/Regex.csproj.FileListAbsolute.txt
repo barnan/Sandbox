@@ -1,0 +1,7 @@
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Regex\bin\Debug\Regex.exe.config
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Regex\bin\Debug\Regex.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Regex\bin\Debug\Regex.pdb
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Regex\obj\Debug\Regex.csprojAssemblyReference.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Regex\obj\Debug\Regex.csproj.CoreCompileInputs.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Regex\obj\Debug\Regex.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Regex\obj\Debug\Regex.pdb

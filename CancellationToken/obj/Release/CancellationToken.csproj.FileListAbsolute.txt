@@ -1,0 +1,7 @@
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\CancellationToken\bin\Release\CancellationToken.exe.config
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\CancellationToken\bin\Release\CancellationToken.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\CancellationToken\bin\Release\CancellationToken.pdb
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\CancellationToken\obj\Release\CancellationToken.csprojAssemblyReference.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\CancellationToken\obj\Release\CancellationToken.csproj.CoreCompileInputs.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\CancellationToken\obj\Release\CancellationToken.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\CancellationToken\obj\Release\CancellationToken.pdb

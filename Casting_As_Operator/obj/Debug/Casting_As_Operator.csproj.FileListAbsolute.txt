@@ -1,0 +1,7 @@
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Casting_As_Operator\bin\Debug\Casting_As_Operator.exe.config
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Casting_As_Operator\bin\Debug\Casting_As_Operator.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Casting_As_Operator\bin\Debug\Casting_As_Operator.pdb
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Casting_As_Operator\obj\Debug\Casting_As_Operator.csprojAssemblyReference.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Casting_As_Operator\obj\Debug\Casting_As_Operator.csproj.CoreCompileInputs.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Casting_As_Operator\obj\Debug\Casting_As_Operator.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Casting_As_Operator\obj\Debug\Casting_As_Operator.pdb

@@ -1,0 +1,7 @@
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Klonozas\bin\Release\Klonozas.exe.config
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Klonozas\bin\Release\Klonozas.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Klonozas\bin\Release\Klonozas.pdb
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Klonozas\obj\Release\Klonozas.csprojAssemblyReference.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Klonozas\obj\Release\Klonozas.csproj.CoreCompileInputs.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Klonozas\obj\Release\Klonozas.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Klonozas\obj\Release\Klonozas.pdb

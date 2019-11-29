@@ -1,0 +1,7 @@
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Equality\bin\Debug\Equality.exe.config
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Equality\bin\Debug\Equality.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Equality\bin\Debug\Equality.pdb
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Equality\obj\Debug\Equality.csprojAssemblyReference.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Equality\obj\Debug\Equality.csproj.CoreCompileInputs.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Equality\obj\Debug\Equality.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Equality\obj\Debug\Equality.pdb

@@ -1,0 +1,7 @@
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Inlining\obj\Debug\Inlining.csprojAssemblyReference.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Inlining\obj\Debug\Inlining.csproj.CoreCompileInputs.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Inlining\bin\Debug\Inlining.exe.config
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Inlining\bin\Debug\Inlining.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Inlining\bin\Debug\Inlining.pdb
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Inlining\obj\Debug\Inlining.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Inlining\obj\Debug\Inlining.pdb

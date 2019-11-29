@@ -1,0 +1,7 @@
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Variable_Enregistration\bin\Debug\Variable_Enregistration.exe.config
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Variable_Enregistration\bin\Debug\Variable_Enregistration.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Variable_Enregistration\bin\Debug\Variable_Enregistration.pdb
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Variable_Enregistration\obj\Debug\Variable_Enregistration.csproj.CoreCompileInputs.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Variable_Enregistration\obj\Debug\Variable_Enregistration.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Variable_Enregistration\obj\Debug\Variable_Enregistration.pdb
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Variable_Enregistration\obj\Debug\Variable_Enregistration.csprojAssemblyReference.cache

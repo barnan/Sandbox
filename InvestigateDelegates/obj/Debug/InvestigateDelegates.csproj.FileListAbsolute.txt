@@ -1,0 +1,7 @@
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\InvestigateDelegates\bin\Debug\InvestigateDelegates.exe.config
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\InvestigateDelegates\bin\Debug\InvestigateDelegates.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\InvestigateDelegates\bin\Debug\InvestigateDelegates.pdb
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\InvestigateDelegates\obj\Debug\InvestigateDelegates.csprojAssemblyReference.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\InvestigateDelegates\obj\Debug\InvestigateDelegates.csproj.CoreCompileInputs.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\InvestigateDelegates\obj\Debug\InvestigateDelegates.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\InvestigateDelegates\obj\Debug\InvestigateDelegates.pdb

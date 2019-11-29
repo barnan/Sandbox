@@ -1,0 +1,7 @@
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Exceptions\bin\Release\Exceptions.exe.config
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Exceptions\bin\Release\Exceptions.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Exceptions\bin\Release\Exceptions.pdb
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Exceptions\obj\Release\Exceptions.csprojAssemblyReference.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Exceptions\obj\Release\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Exceptions\obj\Release\Exceptions.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Exceptions\obj\Release\Exceptions.pdb

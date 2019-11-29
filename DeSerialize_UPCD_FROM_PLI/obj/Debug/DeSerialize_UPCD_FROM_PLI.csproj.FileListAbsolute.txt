@@ -1,0 +1,7 @@
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DeSerialize_UPCD_FROM_PLI\bin\Debug\DeSerialize_UPCD_FROM_PLI.exe.config
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DeSerialize_UPCD_FROM_PLI\bin\Debug\DeSerialize_UPCD_FROM_PLI.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DeSerialize_UPCD_FROM_PLI\bin\Debug\DeSerialize_UPCD_FROM_PLI.pdb
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DeSerialize_UPCD_FROM_PLI\obj\Debug\DeSerialize_UPCD_FROM_PLI.csproj.CoreCompileInputs.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DeSerialize_UPCD_FROM_PLI\obj\Debug\DeSerialize_UPCD_FROM_PLI.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DeSerialize_UPCD_FROM_PLI\obj\Debug\DeSerialize_UPCD_FROM_PLI.pdb
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DeSerialize_UPCD_FROM_PLI\obj\Debug\DeSerialize_UPCD_FROM_PLI.csprojAssemblyReference.cache

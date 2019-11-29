@@ -1,0 +1,7 @@
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\params_argument\bin\Debug\params_argument.exe.config
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\params_argument\bin\Debug\params_argument.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\params_argument\bin\Debug\params_argument.pdb
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\params_argument\obj\Debug\params_argument.csprojAssemblyReference.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\params_argument\obj\Debug\params_argument.csproj.CoreCompileInputs.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\params_argument\obj\Debug\params_argument.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\params_argument\obj\Debug\params_argument.pdb

@@ -1,0 +1,6 @@
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Inlining\bin\Release\Inlining.exe.config
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Inlining\bin\Release\Inlining.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Inlining\bin\Release\Inlining.pdb
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Inlining\obj\Release\Inlining.csproj.CoreCompileInputs.cache
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Inlining\obj\Release\Inlining.exe
+C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Inlining\obj\Release\Inlining.pdb
