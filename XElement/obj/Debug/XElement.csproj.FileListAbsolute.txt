@@ -1,7 +1,0 @@
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\XElement\bin\Debug\XElement.exe.config
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\XElement\bin\Debug\XElement.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\XElement\bin\Debug\XElement.pdb
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\XElement\obj\Debug\XElement.csprojAssemblyReference.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\XElement\obj\Debug\XElement.csproj.CoreCompileInputs.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\XElement\obj\Debug\XElement.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\XElement\obj\Debug\XElement.pdb
