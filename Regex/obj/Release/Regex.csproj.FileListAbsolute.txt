@@ -1,6 +1,0 @@
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Regex\bin\Release\Regex.exe.config
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Regex\bin\Release\Regex.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Regex\bin\Release\Regex.pdb
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Regex\obj\Release\Regex.csproj.CoreCompileInputs.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Regex\obj\Release\Regex.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Regex\obj\Release\Regex.pdb

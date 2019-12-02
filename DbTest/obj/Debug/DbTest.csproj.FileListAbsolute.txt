@@ -1,7 +1,0 @@
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DbTest\bin\Debug\DbTest.exe.config
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DbTest\bin\Debug\DbTest.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DbTest\bin\Debug\DbTest.pdb
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DbTest\obj\Debug\DbTest.csproj.CoreCompileInputs.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DbTest\obj\Debug\DbTest.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DbTest\obj\Debug\DbTest.pdb
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DbTest\obj\Debug\DbTest.csprojAssemblyReference.cache

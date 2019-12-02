@@ -1,7 +1,0 @@
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Serialization\bin\Debug\Serialization.exe.config
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Serialization\bin\Debug\Serialization.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Serialization\bin\Debug\Serialization.pdb
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Serialization\obj\Debug\Serialization.csprojAssemblyReference.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Serialization\obj\Debug\Serialization.csproj.CoreCompileInputs.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Serialization\obj\Debug\Serialization.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Serialization\obj\Debug\Serialization.pdb

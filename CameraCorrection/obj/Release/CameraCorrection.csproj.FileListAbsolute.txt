@@ -1,6 +1,0 @@
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\CameraCorrection\bin\Release\CameraCorrection.exe.config
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\CameraCorrection\bin\Release\CameraCorrection.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\CameraCorrection\bin\Release\CameraCorrection.pdb
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\CameraCorrection\obj\Release\CameraCorrection.csproj.CoreCompileInputs.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\CameraCorrection\obj\Release\CameraCorrection.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\CameraCorrection\obj\Release\CameraCorrection.pdb

@@ -1,7 +1,0 @@
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Conditional\bin\Debug\Conditional.exe.config
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Conditional\bin\Debug\Conditional.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Conditional\bin\Debug\Conditional.pdb
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Conditional\obj\Debug\Conditional.csprojAssemblyReference.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Conditional\obj\Debug\Conditional.csproj.CoreCompileInputs.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Conditional\obj\Debug\Conditional.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Conditional\obj\Debug\Conditional.pdb

@@ -1,7 +1,0 @@
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Exceptions\bin\Debug\Exceptions.exe.config
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Exceptions\bin\Debug\Exceptions.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Exceptions\bin\Debug\Exceptions.pdb
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Exceptions\obj\Debug\Exceptions.csprojAssemblyReference.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Exceptions\obj\Debug\Exceptions.csproj.CoreCompileInputs.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Exceptions\obj\Debug\Exceptions.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Exceptions\obj\Debug\Exceptions.pdb
