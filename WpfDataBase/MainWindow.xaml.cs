@@ -28,8 +28,8 @@ namespace WpfDataBase
 
         private void PopulatePersons()
         {
-            string sqlQuery = "SELECT p.Firstname, p.Lastname, p.Age, Workplace.WorkplaceName" +
-                                "FROM Person AS p" +
+            string sqlQuery = "SELECT p.Firstname, p.Lastname, p.Age, Workplace.WorkplaceName " +
+                                "FROM Person AS p " +
                                 "INNER JOIN Workplace ON Workplace.Id = p.Workplace";
 
             using (_connection = new SqlConnection(_connectionString))
@@ -43,7 +43,7 @@ namespace WpfDataBase
                     adapter.Fill(personDataSet, "Person");
 
                     datagrid.DataContext = personTable.DefaultView;
-                    //listbox.ItemsSource = personTable.AsDataView();
+                    listbox.ItemsSource = personTable.AsDataView();
                 }
 
 
