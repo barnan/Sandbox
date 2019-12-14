@@ -1,7 +1,0 @@
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\ReflectionApplication\bin\Debug\ReflectionApplication.exe.config
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\ReflectionApplication\bin\Debug\ReflectionApplication.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\ReflectionApplication\bin\Debug\ReflectionApplication.pdb
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\ReflectionApplication\obj\Debug\ReflectionApplication.csprojAssemblyReference.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\ReflectionApplication\obj\Debug\ReflectionApplication.csproj.CoreCompileInputs.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\ReflectionApplication\obj\Debug\ReflectionApplication.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\ReflectionApplication\obj\Debug\ReflectionApplication.pdb

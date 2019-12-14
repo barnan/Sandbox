@@ -1,7 +1,0 @@
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\PropInfo\bin\Debug\PropInfo.exe.config
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\PropInfo\bin\Debug\PropInfo.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\PropInfo\bin\Debug\PropInfo.pdb
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\PropInfo\obj\Debug\PropInfo.csprojAssemblyReference.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\PropInfo\obj\Debug\PropInfo.csproj.CoreCompileInputs.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\PropInfo\obj\Debug\PropInfo.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\PropInfo\obj\Debug\PropInfo.pdb

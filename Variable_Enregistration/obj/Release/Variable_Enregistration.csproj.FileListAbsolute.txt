@@ -1,6 +1,0 @@
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Variable_Enregistration\bin\Release\Variable_Enregistration.exe.config
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Variable_Enregistration\bin\Release\Variable_Enregistration.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Variable_Enregistration\bin\Release\Variable_Enregistration.pdb
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Variable_Enregistration\obj\Release\Variable_Enregistration.csproj.CoreCompileInputs.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Variable_Enregistration\obj\Release\Variable_Enregistration.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Variable_Enregistration\obj\Release\Variable_Enregistration.pdb

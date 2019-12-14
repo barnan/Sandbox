@@ -1,7 +1,0 @@
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DateTimeFormats\bin\Debug\DateTimeFormats.exe.config
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DateTimeFormats\bin\Debug\DateTimeFormats.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DateTimeFormats\bin\Debug\DateTimeFormats.pdb
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DateTimeFormats\obj\Debug\DateTimeFormats.csprojAssemblyReference.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DateTimeFormats\obj\Debug\DateTimeFormats.csproj.CoreCompileInputs.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DateTimeFormats\obj\Debug\DateTimeFormats.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\DateTimeFormats\obj\Debug\DateTimeFormats.pdb

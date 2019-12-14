@@ -53,11 +53,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\WpfApp1\WpfApp1.csproj">
-      <Project>{558ad5cd-08d9-47ae-8e57-84f350c289e5}</Project>
-      <Name>WpfApp1</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

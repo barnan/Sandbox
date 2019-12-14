@@ -1,6 +1,0 @@
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Conditional\bin\Release\Conditional.exe.config
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Conditional\bin\Release\Conditional.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Conditional\bin\Release\Conditional.pdb
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Conditional\obj\Release\Conditional.csproj.CoreCompileInputs.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Conditional\obj\Release\Conditional.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Conditional\obj\Release\Conditional.pdb

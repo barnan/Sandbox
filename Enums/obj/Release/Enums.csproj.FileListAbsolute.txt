@@ -1,7 +1,0 @@
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Enums\bin\Release\Enums.exe.config
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Enums\bin\Release\Enums.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Enums\bin\Release\Enums.pdb
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Enums\obj\Release\Enums.csprojAssemblyReference.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Enums\obj\Release\Enums.csproj.CoreCompileInputs.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Enums\obj\Release\Enums.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Enums\obj\Release\Enums.pdb

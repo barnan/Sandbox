@@ -1,7 +1,0 @@
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\PartialClass\bin\Debug\PartialClass.exe.config
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\PartialClass\bin\Debug\PartialClass.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\PartialClass\bin\Debug\PartialClass.pdb
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\PartialClass\obj\Debug\PartialClass.csprojAssemblyReference.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\PartialClass\obj\Debug\PartialClass.csproj.CoreCompileInputs.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\PartialClass\obj\Debug\PartialClass.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\PartialClass\obj\Debug\PartialClass.pdb

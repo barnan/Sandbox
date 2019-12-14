@@ -1,7 +1,0 @@
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Digits_In_scientific_Notation\bin\Debug\Digits_In_scientific_Notation.exe.config
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Digits_In_scientific_Notation\bin\Debug\Digits_In_scientific_Notation.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Digits_In_scientific_Notation\bin\Debug\Digits_In_scientific_Notation.pdb
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Digits_In_scientific_Notation\obj\Debug\Digits_In_scientific_Notation.csprojAssemblyReference.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Digits_In_scientific_Notation\obj\Debug\Digits_In_scientific_Notation.csproj.CoreCompileInputs.cache
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Digits_In_scientific_Notation\obj\Debug\Digits_In_scientific_Notation.exe
-C:\Users\norbert.barna\Source\Repos\ConsoleApp1\Digits_In_scientific_Notation\obj\Debug\Digits_In_scientific_Notation.pdb
