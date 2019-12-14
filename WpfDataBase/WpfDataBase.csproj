@@ -71,7 +71,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DBClasses\Noun.cs" />
+    <Compile Include="DBClasses\Verb.cs" />
+    <Compile Include="Interfaces\IGenericRepository.cs" />
     <Compile Include="NotifyBase.cs" />
+    <Compile Include="RelayCommand.cs" />
     <Compile Include="UserControls\AdjectiveUserControl.xaml.cs">
       <DependentUpon>AdjectiveUserControl.xaml</DependentUpon>
     </Compile>
@@ -144,6 +148,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SQL_Queries\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
