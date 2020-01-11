@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace WpfDataBase
+namespace WpfDataBase.ViewMod
 {
     public class NotifyBase : INotifyPropertyChanged
     {
