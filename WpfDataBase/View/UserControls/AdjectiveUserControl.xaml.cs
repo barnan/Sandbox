@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfDataBase.UserControls
+namespace WpfDataBase.View.UserControls
 {
     /// <summary>
-    /// Interaction logic for Verb.xaml
+    /// Interaction logic for AdjectiveUserControl.xaml
     /// </summary>
-    public partial class Verb : UserControl
+    public partial class AdjectiveUserControl : UserControl
     {
-        public Verb()
+        public AdjectiveUserControl()
         {
             InitializeComponent();
         }
