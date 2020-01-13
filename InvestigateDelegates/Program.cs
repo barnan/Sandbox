@@ -48,7 +48,7 @@ namespace InvestigateDelegates
 
 
             // methodinfo hívás mindig más objektumra: --------------------------------------------
-            MethodInfo mi1 = typeof(Ember).GetMethod("DoSomething");        // ez lassú a reflection miatt, de 
+            MethodInfo mi1 = typeof(Ember).GetMethod("DoSomething");        // ez lassú a reflection miatt, de futásközben gyorasabb leht, nem kell mindig új delegate-et létrehozni
             Func<object, object> fu4 = o => mi1.Invoke(o, null);
 
             Console.WriteLine(fu4(emb2));
@@ -56,7 +56,7 @@ namespace InvestigateDelegates
 
             // nyitott delegate példány metódusra: -------------------------------------------------
             MethodInfo mi2 = typeof(Ember).GetMethod("DoSomething3");
-            Fuggveny4 fu5 = (Fuggveny4)Delegate.CreateDelegate(typeof(Fuggveny4), null, mi2);   // itt meg kell adni a null -objektumot is!!!!
+            Fuggveny4 fu5 = (Fuggveny4)Delegate.CreateDelegate(typeof(Fuggveny4), null, mi2);   // itt meg kell adni a null -objektumot is!!!! A delegate signatúrájában benne van az ember, híváskor viszont nem kell megadni!!!
 
             Console.WriteLine(fu5(emb2, 10));
 
