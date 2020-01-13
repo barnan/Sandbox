@@ -3,22 +3,42 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:UserControls="clr-namespace:WpfDataBase.View.UserControls" 
+        xmlns:userControls="clr-namespace:WpfDataBase.View.UserControls" 
+        xmlns:converters="clr-namespace:WpfDataBase.View.Converters"
+        xmlns:baseClasses="clr-namespace:WpfDataBase.BaseClasses"
         x:Class="WpfDataBase.View.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+
     
+
+
+
     <Grid>
+        
+        <Grid.Resources>
+            <ResourceDictionary>
+                <converters:UserControlVisibilityConverter x:Key="UserControlVisibilityConverter" />
+                <baseClasses:Parts x:Key="adjective">Adjective</baseClasses:Parts>
+                <baseClasses:Parts x:Key="noun">Noun</baseClasses:Parts>
+                <baseClasses:Parts x:Key="verb">Verb</baseClasses:Parts>
+            </ResourceDictionary>
+        </Grid.Resources>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         
-        <GroupBox Grid.Column="0" Grid.Row="0" Header="DB Entry" HorizontalAlignment="Left" VerticalAlignment="Top" Height="380" Width="350">
+        <GroupBox Grid.Column="0" Grid.Row="0" Header="DB Entry" HorizontalAlignment="Left" VerticalAlignment="Top" Height="380" Width="400">
             <StackPanel>
-                <UserControls:AdjectiveUserControl HorizontalAlignment="Left" VerticalAlignment="Top" Height="100" Width="100"/>
-                <UserControls:VerbUserControl HorizontalAlignment="Left" VerticalAlignment="Top" Height="100" Width="100" />
-                <UserControls:NounUserControl HorizontalAlignment="Left" VerticalAlignment="Top" Height="100" Width="100"/>
+                <ComboBox ItemsSource="{Binding AvailableParts}" SelectedItem="{Binding SelectedParts}"/>
+                <userControls:AdjectiveUserControl HorizontalAlignment="Left" VerticalAlignment="Top" 
+                                                   Visibility="{Binding SelectedParts, Converter={StaticResource UserControlVisibilityConverter}, ConverterParameter={StaticResource adjective}}"/>
+                <userControls:VerbUserControl HorizontalAlignment="Left" VerticalAlignment="Top" 
+                                              Visibility="{Binding SelectedParts, Converter={StaticResource UserControlVisibilityConverter}, ConverterParameter={StaticResource verb}}"/>
+                <userControls:NounUserControl HorizontalAlignment="Left" VerticalAlignment="Top" 
+                                              Visibility="{Binding SelectedParts, Converter={StaticResource UserControlVisibilityConverter}, ConverterParameter={StaticResource noun}}"/>
             </StackPanel>
         </GroupBox>
 

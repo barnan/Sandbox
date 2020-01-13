@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace WpfDataBase.ViewMod
+namespace WpfDataBase.BaseClasses
 {
     internal class RelayCommand : NotifyBase, ICommand
     {
