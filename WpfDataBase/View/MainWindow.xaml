@@ -38,7 +38,7 @@
                 </StackPanel>
                 
                 <userControls:AdjectiveUserControl HorizontalAlignment="Left" VerticalAlignment="Top" 
-                                                   
+                                                   AdjectiveVM="{Binding CurrentAdjective}"
                                                    Visibility="{Binding SelectedParts, Converter={StaticResource UserControlVisibilityConverter}, ConverterParameter={StaticResource adjective}}"/>
                 <userControls:VerbUserControl HorizontalAlignment="Left" VerticalAlignment="Top" 
                                               Visibility="{Binding SelectedParts, Converter={StaticResource UserControlVisibilityConverter}, ConverterParameter={StaticResource verb}}"/>
