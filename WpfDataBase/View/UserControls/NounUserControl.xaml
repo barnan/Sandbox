@@ -15,11 +15,35 @@
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <StackPanel Orientation="Horizontal">
-        <TextBox x:Name="ID"/>
-        <ComboBox x:Name="Article"/>
-        <TextBox x:Name="Word"/>
-        <TextBox x:Name="Plural"/>
-        <TextBox x:Name="Expression"/>
-    </StackPanel>
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="ID"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="ID"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Article"/>
+        <ComboBox Grid.Row="1" Grid.Column="1" x:Name="Article" Width="30"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Noun"/>
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="Word"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Plural"/>
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="Plural"/>
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="Example"/>
+        <TextBox Grid.Row="4" Grid.Column="1" x:Name="Expression" Width="150"/>
+    </Grid>
+
 </UserControl>

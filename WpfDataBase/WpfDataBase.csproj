@@ -78,6 +78,9 @@
     <Compile Include="Interfaces\IGenericRepository.cs" />
     <Compile Include="BaseClasses\NotifyBase.cs" />
     <Compile Include="BaseClasses\RelayCommand.cs" />
+    <Compile Include="ViewModel\AdjectiveViewModel.cs" />
+    <Compile Include="ViewModel\NounViewModel.cs" />
+    <Compile Include="ViewModel\VerbViewModel.cs" />
     <Compile Include="View\Converters\UserControlVisibilityConverter.cs" />
     <Compile Include="View\UserControls\AdjectiveUserControl.xaml.cs">
       <DependentUpon>AdjectiveUserControl.xaml</DependentUpon>

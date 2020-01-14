@@ -9,16 +9,16 @@
         x:Class="WpfDataBase.View.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-
     
-
-
-
     <Grid>
-        
         <Grid.Resources>
             <ResourceDictionary>
+                <ResourceDictionary.MergedDictionaries>
+                    <!--<ResourceDictionary Source="../Styles.xaml"/>-->
+                </ResourceDictionary.MergedDictionaries>
+
                 <converters:UserControlVisibilityConverter x:Key="UserControlVisibilityConverter" />
+                
                 <baseClasses:Parts x:Key="adjective">Adjective</baseClasses:Parts>
                 <baseClasses:Parts x:Key="noun">Noun</baseClasses:Parts>
                 <baseClasses:Parts x:Key="verb">Verb</baseClasses:Parts>
@@ -32,13 +32,23 @@
         
         <GroupBox Grid.Column="0" Grid.Row="0" Header="DB Entry" HorizontalAlignment="Left" VerticalAlignment="Top" Height="380" Width="400">
             <StackPanel>
-                <ComboBox ItemsSource="{Binding AvailableParts}" SelectedItem="{Binding SelectedParts}"/>
+                <StackPanel Orientation="Horizontal" Margin="5,20">
+                    <TextBlock Text="Category Selector:"/>
+                    <ComboBox ItemsSource="{Binding AvailableParts}" SelectedItem="{Binding SelectedParts}" Width="100"/>
+                </StackPanel>
+                
                 <userControls:AdjectiveUserControl HorizontalAlignment="Left" VerticalAlignment="Top" 
+                                                   
                                                    Visibility="{Binding SelectedParts, Converter={StaticResource UserControlVisibilityConverter}, ConverterParameter={StaticResource adjective}}"/>
                 <userControls:VerbUserControl HorizontalAlignment="Left" VerticalAlignment="Top" 
                                               Visibility="{Binding SelectedParts, Converter={StaticResource UserControlVisibilityConverter}, ConverterParameter={StaticResource verb}}"/>
                 <userControls:NounUserControl HorizontalAlignment="Left" VerticalAlignment="Top" 
                                               Visibility="{Binding SelectedParts, Converter={StaticResource UserControlVisibilityConverter}, ConverterParameter={StaticResource noun}}"/>
+
+                <StackPanel Orientation="Horizontal" Margin="5,20">
+                    <Button x:Name="ClearButton" Width="40" Height="20" Content="Clear"/>
+                    <Button x:Name="AddButton" Width="40" Height="20" Content="Add"/>
+                </StackPanel>
             </StackPanel>
         </GroupBox>
 
@@ -48,6 +58,6 @@
                 <DataGrid x:Name="datagrid" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="282" ItemsSource="{Binding}"/>
             </StackPanel>
         </GroupBox>
-
+        
     </Grid>
 </Window>

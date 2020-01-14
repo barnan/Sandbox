@@ -15,14 +15,42 @@
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <StackPanel Orientation="Horizontal">
-        <TextBox x:Name="ID"/>
-        <TextBox x:Name="Present"/>
-        <TextBox x:Name="PresentE3"/>
-        <TextBox x:Name="SimplePast"/>
-        <ComboBox x:Name="AuxiliaryVerb"/>
-        <TextBox x:Name="Perfect"/>
-        <TextBox x:Name="Expression"/>
-    </StackPanel>
-    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>            
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="ID"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="ID"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Present"/>
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="Present"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="PresentE3"/>
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="PresentE3"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="SimplePast"/>
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="SimplePast"/>
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="AuxVerb"/>
+        <ComboBox Grid.Row="4" Grid.Column="1" x:Name="AuxiliaryVerb" Width="30"/>
+
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="Perfect"/>
+        <TextBox Grid.Row="5" Grid.Column="1" x:Name="Perfect"/>
+
+        <TextBlock Grid.Row="6" Grid.Column="0" Text="Example"/>
+        <TextBox Grid.Row="6" Grid.Column="1" x:Name="Expression" Width="150"/>
+    </Grid>
+
 </UserControl>
