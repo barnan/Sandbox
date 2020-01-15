@@ -4,8 +4,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfDataBase.View.UserControls"
+             xmlns:vm="clr-namespace:WpfDataBase.ViewMod"
              mc:Ignorable="d" 
-             d:DesignHeight="250" d:DesignWidth="400">
+             d:DesignHeight="250" d:DesignWidth="400"
+             d:DataContext="{d:DesignInstance Type=vm:AdjectiveViewModel, IsDesignTimeCreatable=True}">
     
     <UserControl.Resources>
         <ResourceDictionary>
@@ -31,19 +33,24 @@
 
 
         <TextBlock Grid.Row="0" Grid.Column="0" Text="ID"/>
-        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="ID"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="ID"
+                   Text="{Binding ElementViewModel.ID}"/>
 
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Adjective"/>
-        <TextBox Grid.Row="1" Grid.Column="1" x:Name="Adjective"/>
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="Adjective"
+                 Text="{Binding ElementViewModel.Adjective}"/>
 
         <TextBlock Grid.Row="2" Grid.Column="0" Text="Comparative"/>
-        <TextBox Grid.Row="2" Grid.Column="1" x:Name="Comparative"/>
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="Comparative"
+                 Text="{Binding ElementViewModel.Comparative}"/>
 
         <TextBlock Grid.Row="3" Grid.Column="0" Text="Superlative"/>
-        <TextBox Grid.Row="3" Grid.Column="1" x:Name="Superlative"/>
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="Superlative"
+                 Text="{Binding ElementViewModel.Superlative}"/>
 
         <TextBlock Grid.Row="4" Grid.Column="0" Text="Expression"/>
-        <TextBox Grid.Row="4" Grid.Column="1" x:Name="Expression" Width="150"/>
+        <TextBox Grid.Row="4" Grid.Column="1" x:Name="Expression" Width="150"
+                 Text="{Binding ElementViewModel.Expression}"/>
     </Grid>
 
 </UserControl>

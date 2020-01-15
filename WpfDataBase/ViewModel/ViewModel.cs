@@ -52,7 +52,7 @@ namespace WpfDataBase.ViewMod
         }
 
 
-        private AdjectiveViewModel _currentAdjective = new AdjectiveViewModel();
+        private AdjectiveViewModel _currentAdjective;
         public AdjectiveViewModel CurrentAdjective
         {
             get { return _currentAdjective; }

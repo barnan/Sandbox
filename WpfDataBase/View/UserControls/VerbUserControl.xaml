@@ -4,8 +4,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfDataBase.View.UserControls"
+             xmlns:vm="clr-namespace:WpfDataBase.ViewMod"
              mc:Ignorable="d" 
-             d:DesignHeight="250" d:DesignWidth="400">
+             d:DesignHeight="250" d:DesignWidth="400"
+             d:DataContext="{d:DesignInstance Type=vm:VerbViewModel, IsDesignTimeCreatable=True}">
 
     <UserControl.Resources>
         <ResourceDictionary>
@@ -32,25 +34,32 @@
         </Grid.RowDefinitions>
 
         <TextBlock Grid.Row="0" Grid.Column="0" Text="ID"/>
-        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="ID"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="ID" 
+                   Text="{Binding ElementViewModel.ID}"/>
 
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Present"/>
-        <TextBox Grid.Row="1" Grid.Column="1" x:Name="Present"/>
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="Present" Text="{Binding ElementViewModel.Present}"/>
 
         <TextBlock Grid.Row="2" Grid.Column="0" Text="PresentE3"/>
-        <TextBox Grid.Row="2" Grid.Column="1" x:Name="PresentE3"/>
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="PresentE3" 
+                 Text="{Binding ElementViewModel.PresentE3}"/>
 
         <TextBlock Grid.Row="3" Grid.Column="0" Text="SimplePast"/>
-        <TextBox Grid.Row="3" Grid.Column="1" x:Name="SimplePast"/>
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="SimplePast" 
+                 Text="{Binding ElementViewModel.SimplePast}"/>
 
         <TextBlock Grid.Row="4" Grid.Column="0" Text="AuxVerb"/>
-        <ComboBox Grid.Row="4" Grid.Column="1" x:Name="AuxiliaryVerb" Width="30"/>
+        <ComboBox Grid.Row="4" Grid.Column="1" x:Name="AuxiliaryVerb" Width="60"
+                  ItemsSource="{Binding ElementViewModel.AvailableAuxiliaryVerbs}"
+                  SelectedItem="{Binding ElementViewModel.AuxVerb}"/>
 
         <TextBlock Grid.Row="5" Grid.Column="0" Text="Perfect"/>
-        <TextBox Grid.Row="5" Grid.Column="1" x:Name="Perfect"/>
+        <TextBox Grid.Row="5" Grid.Column="1" x:Name="Perfect" 
+                 Text="{Binding ElementViewModel.Perfect}"/>
 
         <TextBlock Grid.Row="6" Grid.Column="0" Text="Example"/>
-        <TextBox Grid.Row="6" Grid.Column="1" x:Name="Expression" Width="150"/>
+        <TextBox Grid.Row="6" Grid.Column="1" x:Name="Expression" Width="150" 
+                 Text="{Binding ElementViewModel.Expression}"/>
     </Grid>
 
 </UserControl>

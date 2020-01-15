@@ -4,8 +4,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfDataBase.View.UserControls"
+             xmlns:vm="clr-namespace:WpfDataBase.ViewMod"
              mc:Ignorable="d" 
-             d:DesignHeight="250" d:DesignWidth="400">
+             d:DesignHeight="250" d:DesignWidth="400"
+              d:DataContext="{d:DesignInstance Type=vm:NounViewModel, IsDesignTimeCreatable=True}">
 
     <UserControl.Resources>
         <ResourceDictionary>
@@ -31,19 +33,25 @@
         </Grid.RowDefinitions>
 
         <TextBlock Grid.Row="0" Grid.Column="0" Text="ID"/>
-        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="ID"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="ID"
+                   Text="{Binding ElementViewModel.ID}"/>
 
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Article"/>
-        <ComboBox Grid.Row="1" Grid.Column="1" x:Name="Article" Width="30"/>
+        <ComboBox Grid.Row="1" Grid.Column="1" x:Name="Article" Width="60"
+                  ItemsSource="{Binding ElementViewModel.AvailableArticles}"
+                  SelectedItem="{Binding ElementViewModel.Article}"/>
 
         <TextBlock Grid.Row="2" Grid.Column="0" Text="Noun"/>
-        <TextBox Grid.Row="2" Grid.Column="1" x:Name="Word"/>
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="Word"
+                 Text="{Binding ElementViewModel.Word}"/>
 
         <TextBlock Grid.Row="3" Grid.Column="0" Text="Plural"/>
-        <TextBox Grid.Row="3" Grid.Column="1" x:Name="Plural"/>
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="Plural"
+                 Text="{Binding ElementViewModel.Plural}"/>
 
         <TextBlock Grid.Row="4" Grid.Column="0" Text="Example"/>
-        <TextBox Grid.Row="4" Grid.Column="1" x:Name="Expression" Width="150"/>
+        <TextBox Grid.Row="4" Grid.Column="1" x:Name="Expression" Width="150"
+                 Text="{Binding ElementViewModel.Expression}"/>
     </Grid>
 
 </UserControl>

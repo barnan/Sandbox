@@ -12,19 +12,19 @@ namespace WpfDataBase.View.UserControls
         public AdjectiveUserControl()
         {
             InitializeComponent();
-            DataContext = this;
         }
 
 
-        public AdjectiveViewModel AdjectiveVM
+        public AdjectiveViewModel ElementViewModel
         {
-            get { return (AdjectiveViewModel)GetValue(AdjectiveVMProperty); }
-            set { SetValue(AdjectiveVMProperty, value); }
+            get { return (AdjectiveViewModel)GetValue(ElementViewModelProperty); }
+            set { SetValue(ElementViewModelProperty, value); }
         }
 
         // Using a DependencyProperty as the backing store for AdjectiveVM.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty AdjectiveVMProperty =
-            DependencyProperty.Register("AdjectiveVM", typeof(AdjectiveViewModel), typeof(AdjectiveUserControl), new PropertyMetadata(0));
+        public static readonly DependencyProperty ElementViewModelProperty =
+            DependencyProperty.Register("ElementViewModel", typeof(AdjectiveViewModel), typeof(AdjectiveUserControl), new PropertyMetadata(new AdjectiveViewModel()));
+
 
 
 

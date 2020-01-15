@@ -16,11 +16,11 @@ namespace WpfDataBase.BaseClasses
         [Description("")]
         None = 0,
 
-        [Description("hat")]
-        h = 1,
+        [Description("h")]
+        hat = 1,
 
-        [Description("ist")]
-        i = 2,
+        [Description("i")]
+        ist = 2,
     }
 
 

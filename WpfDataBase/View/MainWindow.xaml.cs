@@ -15,9 +15,10 @@ namespace WpfDataBase.View
 
         public MainWindow()
         {
+
+            this.DataContext = new ViewModel();
+
             InitializeComponent();
-            _viewModel = new ViewModel();
-            this.DataContext = _viewModel;
 
             //_connectionString = ConfigurationManager.ConnectionStrings["WpfDataBase.Properties.Settings.Test01_ConnectionString"].ConnectionString;
             //PopulatePersons();
