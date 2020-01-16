@@ -34,32 +34,27 @@
         </Grid.RowDefinitions>
 
         <TextBlock Grid.Row="0" Grid.Column="0" Text="ID"/>
-        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="ID" 
-                   Text="{Binding ElementViewModel.ID}"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding CurrentVerb.ID}"/>
 
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Present"/>
-        <TextBox Grid.Row="1" Grid.Column="1" x:Name="Present" Text="{Binding ElementViewModel.Present}"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding CurrentVerb.Present}"/>
 
         <TextBlock Grid.Row="2" Grid.Column="0" Text="PresentE3"/>
-        <TextBox Grid.Row="2" Grid.Column="1" x:Name="PresentE3" 
-                 Text="{Binding ElementViewModel.PresentE3}"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding PresentE3}"/>
 
         <TextBlock Grid.Row="3" Grid.Column="0" Text="SimplePast"/>
-        <TextBox Grid.Row="3" Grid.Column="1" x:Name="SimplePast" 
-                 Text="{Binding ElementViewModel.SimplePast}"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding SimplePast}"/>
 
         <TextBlock Grid.Row="4" Grid.Column="0" Text="AuxVerb"/>
-        <ComboBox Grid.Row="4" Grid.Column="1" x:Name="AuxiliaryVerb" Width="60"
-                  ItemsSource="{Binding ElementViewModel.AvailableAuxiliaryVerbs}"
-                  SelectedItem="{Binding ElementViewModel.AuxVerb}"/>
+        <ComboBox Grid.Row="4" Grid.Column="1" Width="60"
+                  ItemsSource="{Binding AvailableAuxiliaryVerbs}"
+                  SelectedItem="{Binding AuxVerb}"/>
 
         <TextBlock Grid.Row="5" Grid.Column="0" Text="Perfect"/>
-        <TextBox Grid.Row="5" Grid.Column="1" x:Name="Perfect" 
-                 Text="{Binding ElementViewModel.Perfect}"/>
+        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Perfect}"/>
 
         <TextBlock Grid.Row="6" Grid.Column="0" Text="Example"/>
-        <TextBox Grid.Row="6" Grid.Column="1" x:Name="Expression" Width="150" 
-                 Text="{Binding ElementViewModel.Expression}"/>
+        <TextBox Grid.Row="6" Grid.Column="1" Width="150" Text="{Binding Expression}"/>
     </Grid>
 
 </UserControl>

@@ -12,7 +12,6 @@ namespace WpfDataBase.View.UserControls
         public VerbUserControl()
         {
             InitializeComponent();
-            this.DataContext = this;
         }
 
 
@@ -25,9 +24,6 @@ namespace WpfDataBase.View.UserControls
         // Using a DependencyProperty as the backing store for AdjectiveVM.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty ElementViewModelProperty =
             DependencyProperty.Register("ElementViewModel", typeof(VerbViewModel), typeof(VerbUserControl), new PropertyMetadata(new VerbViewModel()));
-
-
-
 
     }
 }

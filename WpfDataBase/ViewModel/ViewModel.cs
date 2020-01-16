@@ -10,16 +10,20 @@ namespace WpfDataBase.ViewMod
         {
             AddCommand = new RelayCommand(ExecuteAdd);
             ClearCommand = new RelayCommand(ExecuteClear);
+
+            CurrentVerb = new VerbViewModel { Present = "nehmen" };
+            CurrentNoun = new NounViewModel { Word = "hihi" };
+            CurrentAdjective = new AdjectiveViewModel { Adjective = "kapa" };
         }
 
 
 
         public Parts[] AvailableParts => (Parts[])Enum.GetValues(typeof(Parts));
 
-        private Parts _selectedParts = Parts.Verb;
+        private Parts _selectedParts;
         public Parts SelectedParts
         {
-            get => _selectedParts;
+            get { return _selectedParts; }
             set
             {
                 _selectedParts = value;

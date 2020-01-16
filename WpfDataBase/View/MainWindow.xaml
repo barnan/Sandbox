@@ -21,7 +21,7 @@
                 
                 <baseClasses:Parts x:Key="Adjective">Adjective</baseClasses:Parts>
                 <baseClasses:Parts x:Key="Noun">Noun</baseClasses:Parts>
-                <baseClasses:Parts x:Key="verb">Verb</baseClasses:Parts>
+                <baseClasses:Parts x:Key="Verb">Verb</baseClasses:Parts>
             </ResourceDictionary>
         </Grid.Resources>
 
@@ -39,13 +39,16 @@
                 
                 <userControls:AdjectiveUserControl HorizontalAlignment="Left" VerticalAlignment="Top" 
                                                    ElementViewModel="{Binding CurrentAdjective}"
-                                                   Visibility="{Binding SelectedParts, Converter={StaticResource UserControlVisibilityConverter}, ConverterParameter={StaticResource Adjective}}"/>
+                                                   Visibility="{Binding SelectedParts, Converter={StaticResource UserControlVisibilityConverter}, ConverterParameter={StaticResource Adjective}, 
+                                                   Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
                 <userControls:VerbUserControl HorizontalAlignment="Left" VerticalAlignment="Top" 
                                               ElementViewModel="{Binding CurrentVerb}"
-                                              Visibility="{Binding SelectedParts, Converter={StaticResource UserControlVisibilityConverter}, ConverterParameter={StaticResource verb}}"/>
+                                              Visibility="{Binding SelectedParts, Converter={StaticResource UserControlVisibilityConverter}, ConverterParameter={StaticResource Verb}, 
+                                              Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
                 <userControls:NounUserControl HorizontalAlignment="Left" VerticalAlignment="Top" 
                                               ElementViewModel="{Binding CurrentNoun}"
-                                              Visibility="{Binding SelectedParts, Converter={StaticResource UserControlVisibilityConverter}, ConverterParameter={StaticResource Noun}}"/>
+                                              Visibility="{Binding SelectedParts, Converter={StaticResource UserControlVisibilityConverter}, ConverterParameter={StaticResource Noun}, 
+                                              Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
 
                 <StackPanel Orientation="Horizontal" Margin="5,20">
                     <Button x:Name="ClearButton" Width="40" Height="20" Content="Clear"/>

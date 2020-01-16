@@ -15,25 +15,11 @@ namespace WpfDataBase.View.Converters
                 return Binding.DoNothing;
             }
 
-            Parts parts = (Parts)value;
-            //AdjectiveUserControl adjectiveUserControl = parameter as AdjectiveUserControl;
-            //NounUserControl nounUserControl = parameter as NounUserControl;
-            //VerbUserControl verbUserControl = parameter as VerbUserControl;
+            Parts parts = (Parts)parameter;
+            Parts expectedParts = (Parts)value;
 
-            if (parameter is Parts.Adjective)
-            {
-                return parts == Parts.Adjective ? Visibility.Visible : Visibility.Collapsed;
-            }
-            if (parameter is Parts.Noun)
-            {
-                return parts == Parts.Noun ? Visibility.Visible : Visibility.Collapsed;
-            }
-            if (parameter is Parts.Verb)
-            {
-                return parts == Parts.Verb ? Visibility.Visible : Visibility.Collapsed;
-            }
+            return parts == expectedParts ? Visibility.Visible : Visibility.Collapsed;
 
-            return Binding.DoNothing;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

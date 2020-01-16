@@ -33,24 +33,19 @@
 
 
         <TextBlock Grid.Row="0" Grid.Column="0" Text="ID"/>
-        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="ID"
-                   Text="{Binding ElementViewModel.ID}"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding ID}"/>
 
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Adjective"/>
-        <TextBox Grid.Row="1" Grid.Column="1" x:Name="Adjective"
-                 Text="{Binding ElementViewModel.Adjective}"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Adjective}"/>
 
         <TextBlock Grid.Row="2" Grid.Column="0" Text="Comparative"/>
-        <TextBox Grid.Row="2" Grid.Column="1" x:Name="Comparative"
-                 Text="{Binding ElementViewModel.Comparative}"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Comparative}"/>
 
         <TextBlock Grid.Row="3" Grid.Column="0" Text="Superlative"/>
-        <TextBox Grid.Row="3" Grid.Column="1" x:Name="Superlative"
-                 Text="{Binding ElementViewModel.Superlative}"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Superlative}"/>
 
         <TextBlock Grid.Row="4" Grid.Column="0" Text="Expression"/>
-        <TextBox Grid.Row="4" Grid.Column="1" x:Name="Expression" Width="150"
-                 Text="{Binding ElementViewModel.Expression}"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Width="150" Text="{Binding Expression}"/>
     </Grid>
 
 </UserControl>
