@@ -50,15 +50,15 @@ namespace WpfDataBase.BaseClasses
                 _isEnabled = value;
                 OnPropertyChanged();
 
-                var eventHandlerToCall = CanExecuteChanged;
+                EventHandler eventHandlerToCall = CanExecuteChanged;
                 eventHandlerToCall?.Invoke(this, new EventArgs());
             }
         }
 
         public void UpdateCanExecute()
         {
-            EventHandler handler = CanExecuteChanged;
-            handler?.Invoke(this, new EventArgs());
+            EventHandler eventHandlerToCall = CanExecuteChanged;
+            eventHandlerToCall?.Invoke(this, new EventArgs());
         }
 
         #endregion

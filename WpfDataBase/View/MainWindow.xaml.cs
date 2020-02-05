@@ -16,7 +16,8 @@ namespace WpfDataBase.View
         public MainWindow()
         {
 
-            this.DataContext = new ViewModel();
+            _viewModel = new ViewModel();
+            this.DataContext = _viewModel;
 
             InitializeComponent();
 
