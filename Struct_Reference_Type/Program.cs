@@ -10,7 +10,7 @@ namespace Struct_Reference_Type
 
             struct01 struktura2 = struktura1;           // egy deep copy keletkezik a structról, de a benne lévő referenciáról CSAK SEKÉLY
             struktura1.IntValtozo1 = 40;                   // csak az eredetit módosítja, mert erről ugye deep copy keletkezik
-            struktura1.Ref02.IntValtozo = 10000000;       // módosítja az eredetit és a lemásolt struct-ot is
+            struktura1.Ref02.IntValtozo = 10000000;       // módosítja az eredetit és a lemásolt struct-ban lévő referencia változót is
 
 
 
