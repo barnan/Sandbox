@@ -19,10 +19,10 @@ namespace Investigate_Partial
     internal partial class Valami : BaseClass1          // több helyen is meg lehet adni baseclass-t de annak ugyannak kell lennie, így sem lehet több őse, mint 1
     {
 
-        //partial void DoSomething()
-        //{
-        //    Console.WriteLine("valami DoSomething 1");          // egyszerre csak egy implementáció lehet
-        //}
+        partial void DoSomething()
+        {
+            Console.WriteLine("valami DoSomething 1");          // egyszerre csak egy implementáció lehet
+        }
     }
 
 
