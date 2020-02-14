@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Investigate_Tuple
 {
@@ -10,6 +6,15 @@ namespace Investigate_Tuple
     {
         static void Main(string[] args)
         {
+
+            Tuple<int, int, string> tupple1 = new Tuple<int, int, string>(10, 20, "fdsfd");
+            Tuple<int, int, string> tupple2 = (11, 11, "dfdsfsd");
+
+            var tuppleVariable = (11, 11, "dfdsfsd");
+
+
+
+
         }
     }
 }
