@@ -21,7 +21,7 @@ namespace Investigate_Partial
 
         partial void DoSomething()
         {
-            Console.WriteLine("valami DoSomething 1");          // egyszerre csak egy implementáció lehet
+            Console.WriteLine("valami DoSomething 1");          // egyszerre csak egy implementáció lehet. Ha nincs implementálva sehol, kihagyja, de nem dob hibát!!!
         }
     }
 
