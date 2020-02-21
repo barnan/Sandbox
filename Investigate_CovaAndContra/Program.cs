@@ -36,5 +36,14 @@ namespace Investigate_CovaAndContra
         }
 
 
+
+        static void DoSomething(in ClassBase input)
+        {
+            //input = new ClassBase();          --> fordítási hibát ad Cx 7.2 felett!!!
+        }
+
+
+
+
     }
 }
