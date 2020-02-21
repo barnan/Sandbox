@@ -9,7 +9,7 @@ namespace Investigate_Tuple
 
             Tuple<int, int, string> tupple1 = new Tuple<int, int, string>(10, 20, "fdsfd");
 
-            (string Alpha, string Beta) namedLetters = ("a", "b");
+            //(string Alpha, string Beta) namedLetters = ("a", "b");
 
 
 
