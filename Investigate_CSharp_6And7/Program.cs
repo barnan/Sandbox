@@ -11,7 +11,9 @@ namespace Investigate_CSharp_6And7
         static void Main(string[] args)
         {
 
-            // ------------------------------ referencia típus ----------------------------------------------
+            // --------------------------------------- ref return --------------------------------------------------------
+
+            // referencia típus 
             ref ExampleClass visszaClass = ref Program.GetItem1(2);
 
             ref ExampleClass visszaRef = ref Program.GetItem1(1);
@@ -26,7 +28,7 @@ namespace Investigate_CSharp_6And7
             Console.WriteLine($"{ec[0].Property1} {ec[1].Property1} {ec[2].Property1}");
 
 
-            // ------------------------------ érték típus ----------------------------------------------------
+            // érték típus 
 
             ref int vissza = ref Program.GetItem2(1);
             int vissza2 = Program.GetItem2(2);
@@ -38,6 +40,9 @@ namespace Investigate_CSharp_6And7
             vissza2 = 300;
 
             Console.WriteLine($"{el[0]} {el[1]} {el[2]}");
+
+
+            // ---------------------------------------  --------------------------------------------------------
 
 
             Console.ReadKey();
