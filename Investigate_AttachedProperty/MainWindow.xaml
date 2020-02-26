@@ -4,9 +4,23 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Investigate_AttachedProperty"
+        xmlns:userC="clr-namespace:Investigate_AttachedProperty.UserControl1"
+        xmlns:attachedP="clr-namespace:Investigate_AttachedProperty.AttachedProperties"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        d:DataContext="{d:DesignInstance local:ViewModel}"
+        Title="MainWindow" Height="300" Width="500">
+
+    <StackPanel Margin="10">
+
+        <userC:UserControl1 MyProperty="{Binding VMProperty}" HorizontalAlignment="Center"/>
+
+        <userC:UserControl1>
+            <userC:UserControl1.MyProperty>
+                <Ellipse Width ="50" Height="50" Fill="Blue" Stroke="Black"/>
+            </userC:UserControl1.MyProperty>
+        </userC:UserControl1>
+
+        <TextBox Text="{Binding VMProperty, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MouseLeave="TextBox_MouseLeave"/>
+
+    </StackPanel>
 </Window>
