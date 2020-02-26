@@ -2,6 +2,8 @@
 {
     class ViewModel
     {
-        public string VMProperty { get; set; } = "...";
+        public string VmProperty { get; set; } = "...";
+
+        public string VmProperty2 { get; set; } = "...";
     }
 }
