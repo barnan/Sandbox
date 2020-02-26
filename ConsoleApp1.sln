@@ -79,6 +79,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Investigate_CSharp_6And7", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Investigate_CovaAndContra", "Investigate_CovaAndContra\Investigate_CovaAndContra.csproj", "{2685C2BD-182C-496C-BC24-FDAEB7F7366E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Investigate_AttachedProperty", "Investigate_AttachedProperty\Investigate_AttachedProperty.csproj", "{73D11322-9D04-4D18-95BD-6165A80C96F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -237,6 +239,10 @@ Global
 		{2685C2BD-182C-496C-BC24-FDAEB7F7366E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2685C2BD-182C-496C-BC24-FDAEB7F7366E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2685C2BD-182C-496C-BC24-FDAEB7F7366E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73D11322-9D04-4D18-95BD-6165A80C96F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73D11322-9D04-4D18-95BD-6165A80C96F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73D11322-9D04-4D18-95BD-6165A80C96F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73D11322-9D04-4D18-95BD-6165A80C96F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
