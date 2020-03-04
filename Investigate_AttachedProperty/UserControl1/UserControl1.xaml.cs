@@ -13,8 +13,8 @@ namespace Investigate_AttachedProperty.UserControl1
 
         public object MyProperty
         {
-            get { return (object)GetValue(MyPropertyProperty); }
-            set { SetValue(MyPropertyProperty, value); }
+            get => (object)GetValue(MyPropertyProperty);
+            set => SetValue(MyPropertyProperty, value);
         }
 
         // Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...

@@ -17,5 +17,16 @@ namespace Investigate_AttachedProperty
         {
             ;
         }
+
+        private void Button1_OnClick(object sender, RoutedEventArgs e)
+        {
+            (DataContext as ViewModel).VmProperty2 = textBox1.Text;
+        }
+
+        private void Button2_OnClick(object sender, RoutedEventArgs e)
+        {
+            textBox3.Text = textBoxEx1.SecurityId;
+
+        }
     }
 }

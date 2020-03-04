@@ -6,9 +6,18 @@
         xmlns:local="clr-namespace:Investigate_AttachedProperty"
         xmlns:userC="clr-namespace:Investigate_AttachedProperty.UserControl1"
         xmlns:attachedP="clr-namespace:Investigate_AttachedProperty.AttachedProperties"
+        xmlns:dependecyP="clr-namespace:Investigate_AttachedProperty.DependencyProperties"
         mc:Ignorable="d"
         d:DataContext="{d:DesignInstance local:ViewModel}"
-        Title="MainWindow" Height="300" Width="500">
+        Title="MainWindow" Height="400" Width="500">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="Margin" Value="5"/>
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
 
     <StackPanel Margin="10">
 
@@ -20,9 +29,24 @@
             </userC:UserControl1.MyProperty>
         </userC:UserControl1>
 
-        <TextBox Text="{Binding VmProperty, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MouseLeave="TextBox_MouseLeave"/>
+        <Separator/>
 
-        <TextBox attachedP:TextBoxTextChangedToCommand.NorbiText="{Binding VMProperty2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox x:Name="textBox1" Text="{Binding VmProperty, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MouseLeave="TextBox_MouseLeave"/>
+
+        <TextBox x:Name="textBox2" attachedP:AttachedText.SecurityId="{Binding VmProperty2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <Separator/>
+
+        <dependecyP:TextBoxEx x:Name="textBoxEx1" SecurityId="{Binding VmProperty, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectOnEntry="True" />
+
+        <TextBox x:Name="textBox3" />
+       
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="button1" Width="50" Height="20" Content="Button1" Click="Button1_OnClick" attachedP:AttachedText.SecurityId="{Binding VmProperty2}"/>
+            <Button x:Name="button2" Width="50" Height="20" Content="Button2" Click="Button2_OnClick"/>
+        </StackPanel>
+
+        <Separator/>
 
     </StackPanel>
 </Window>
