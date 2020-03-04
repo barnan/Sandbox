@@ -81,6 +81,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Investigate_CovaAndContra",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Investigate_AttachedProperty", "Investigate_AttachedProperty\Investigate_AttachedProperty.csproj", "{73D11322-9D04-4D18-95BD-6165A80C96F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Investigate_WeakReference", "Investigate_WeakReference\Investigate_WeakReference.csproj", "{7C9A01DE-0BC2-40FD-8B43-295B67861289}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -243,6 +245,10 @@ Global
 		{73D11322-9D04-4D18-95BD-6165A80C96F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73D11322-9D04-4D18-95BD-6165A80C96F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73D11322-9D04-4D18-95BD-6165A80C96F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C9A01DE-0BC2-40FD-8B43-295B67861289}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C9A01DE-0BC2-40FD-8B43-295B67861289}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C9A01DE-0BC2-40FD-8B43-295B67861289}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C9A01DE-0BC2-40FD-8B43-295B67861289}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
