@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BEFB9249-08E7-43D8-8131-1F5113E1764D}</ProjectGuid>
+    <ProjectGuid>{64AC7C1F-CA1B-463E-B64D-1034BAA4430C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PartialClass</RootNamespace>
-    <AssemblyName>PartialClass</AssemblyName>
+    <RootNamespace>Investigate_LINQ</RootNamespace>
+    <AssemblyName>Investigate_LINQ</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fo_Class.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
