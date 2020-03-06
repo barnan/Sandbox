@@ -39,4 +39,21 @@ namespace Investigate_Partial
 
     }
 
+    //*********************** struct ***********************************
+    public partial struct ExampleStruct1                // struct is lehet partial!!
+    {
+        private int field1;
+    }
+
+
+    public partial struct ExampleStruct1
+    {
+        private int field2;
+
+        public ExampleStruct1(int input1, int input2)
+        {
+            field1 = input1;
+            field2 = input2;                // a ctor-nak továbbra is az össze field-et inicializálnia kell!!!!
+        }
+    }
 }
