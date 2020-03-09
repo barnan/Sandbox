@@ -57,7 +57,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GC", "GC\GC.csproj", "{3EF4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stringek", "stringek\stringek.csproj", "{87BEF885-68C9-4C7D-AA95-FB6A0C3B7A8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestigateDelegates", "InvestigateDelegates\InvestigateDelegates.csproj", "{A097589E-5B92-42A9-8C5F-CE145A3D73C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Investigate_Delegates", "InvestigateDelegates\Investigate_Delegates.csproj", "{A097589E-5B92-42A9-8C5F-CE145A3D73C5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "emguTest", "emguTest\emguTest.csproj", "{7A88A1D8-B540-4FA3-8591-34304A06B23B}"
 EndProject
@@ -82,6 +82,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Investigate_WeakReference", "Investigate_WeakReference\Investigate_WeakReference.csproj", "{7C9A01DE-0BC2-40FD-8B43-295B67861289}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Investigate_LINQ", "Investigate_LINQ\Investigate_LINQ.csproj", "{64AC7C1F-CA1B-463E-B64D-1034BAA4430C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Investigate_NullableTypeType", "Investigate_ NullableTypeType\Investigate_NullableTypeType.csproj", "{F38FB381-4B8E-44BE-86C1-418925DE3040}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Investigate_Threading", "Investigate_Threading\Investigate_Threading.csproj", "{BD4805AE-0EB0-40A1-9567-2FDC7E768123}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -249,6 +253,14 @@ Global
 		{64AC7C1F-CA1B-463E-B64D-1034BAA4430C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64AC7C1F-CA1B-463E-B64D-1034BAA4430C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64AC7C1F-CA1B-463E-B64D-1034BAA4430C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F38FB381-4B8E-44BE-86C1-418925DE3040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F38FB381-4B8E-44BE-86C1-418925DE3040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F38FB381-4B8E-44BE-86C1-418925DE3040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F38FB381-4B8E-44BE-86C1-418925DE3040}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD4805AE-0EB0-40A1-9567-2FDC7E768123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD4805AE-0EB0-40A1-9567-2FDC7E768123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD4805AE-0EB0-40A1-9567-2FDC7E768123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD4805AE-0EB0-40A1-9567-2FDC7E768123}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

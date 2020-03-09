@@ -49,41 +49,11 @@ namespace Struct_Reference_Type
             reference02.IntValtozo = 40;
             Console.WriteLine($"ref hash másodszor: {reference02.GetHashCode()}");      // a referencia hash kódja nem változik, azzal hogy a mezőit változtatjuk
 
-            // --------------nullable value type ---------------------------------------------------------------------
-
-            struct01? nullablestruct = struktura1;
-            Nullable<struct01> nullableStruct2 = nullablestruct;
-
-            struct01 stru = nullablestruct.Value;                   // minden Nullable értéktípus a Nullable<T>-ből származik
-            Console.WriteLine(nullablestruct);
-
-
-            int? int01 = 10;
-            int? int02 = int01;                     // a nullable<T> az egy struct, teljes másolat keletkezik róla
-            int02 = null;
-
-            // --------------nullable boxing ---------------------------------------------------------------------
-
-            object obj01 = int01;
-
-            Console.WriteLine((int)obj01);          // fontos!!! boxing-kor az érték csomagolódik csak, kicsomagolás is lehetséges az eredeti típusra!!!
-            Console.WriteLine((int?)obj01);         // fontos!!! nem dob exceptiont
-            //Console.WriteLine((long)obj01);         // fontos!!! tehát itt exception-t dob
-
-
-            int? k = 30;
-            Console.WriteLine(IsOfNullableType(k));
+          
 
 
             Console.ReadKey();
         }
 
-
-
-        static bool IsOfNullableType<T>(T o)
-        {
-            var type = typeof(T);
-            return Nullable.GetUnderlyingType(type) != null;
-        }
     }
 }
