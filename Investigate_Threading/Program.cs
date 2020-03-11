@@ -1,11 +1,14 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace Investigate_Threading
 {
+
     class Program
     {
+
         static void Main(string[] args)
         {
             //Prog01();
@@ -16,9 +19,14 @@ namespace Investigate_Threading
             //Prog06();
             //Prog07();
             //Prog08();
-            Prog09();
-            Prog10();
+            //Prog09();
+            //Prog10();
+            //Prog11();
+            //Prog12();
+            Prog13();
 
+
+            Thread.Sleep(10000);
 
             Console.ReadKey();
 
@@ -52,7 +60,7 @@ namespace Investigate_Threading
         /// <summary>
         /// catch variables
         /// </summary>
-        private static void Prog02()            // külső hivatkozott változók (hiába ValueType-ok) a heap-re kerülnek. És itt mind a két száll írja
+        private static void Prog02()            // variable catching -> külső hivatkozott változók (hiába ValueType-ok) a heap-re kerülnek. És itt mind a két száll írja
         {
             int szamlalo = 0;
             int limit = 10;
@@ -76,7 +84,7 @@ namespace Investigate_Threading
         /// <summary>
         /// locking
         /// </summary>
-        private static void Prog03()                    // ha nincs le-lock-olva, nemtudni, h melyik írja/elenőrzi előbb
+        private static void Prog03()                    // ha nincs lock-olva, nemtudni, h melyik írja/elenőrzi előbb
         {                                               // ha el van látva lock-al -> akkor mindig csak egyszer írja ki.
             bool todo = true;
             object obj = new object();
@@ -129,7 +137,9 @@ namespace Investigate_Threading
         }
 
 
-        //threadstart, parameterized threadstart
+        /// <summary>
+        /// threadstart, parameterized threadstart
+        /// </summary>
         private static void Prog05()            // az egyik delegate-nek van paramétere, a másiknak nincs
         {
             Thread thread1 = new Thread(new ThreadStart(() =>
@@ -157,7 +167,7 @@ namespace Investigate_Threading
             Thread thread1 = new Thread(new ThreadStart(() =>
             {
                 Console.WriteLine("Mindjárt jön az exception");
-                throw new Exception("It is comming from the thread.");
+                throw new Exception("It is comming from the thread.");      // kezeletlen exception a szálon -> leáll az alkalmazás
             }));
 
             try
@@ -167,7 +177,7 @@ namespace Investigate_Threading
             }
             catch (Exception ex)
             {
-                ;       // ide nem fut be, leáll az alkalmaás, a thread-en belül lévő száll nem jut ki
+                ;       // ide nem fut be, leáll az alkalmaás, a thread-en belül lévő exception nem jut ki
             }
 
             thread1.Join();
@@ -180,9 +190,9 @@ namespace Investigate_Threading
         {
             Task task01 = Task.Factory.StartNew(() =>
             {
-                Console.WriteLine("Task paraméter és visszatéréis érték nélkül indul");
+                Console.WriteLine("Task paraméter és visszatérési érték nélkül indul");
                 Thread.Sleep(3000);
-                Console.WriteLine("Task paraméter és visszatéréis érték nélkül végetér");
+                Console.WriteLine("Task paraméter és visszatérési érték nélkül végetér");
             });
 
             Task<int> task02 = Task<int>.Factory.StartNew(() =>
@@ -210,13 +220,15 @@ namespace Investigate_Threading
         /// </summary>
         private static void Prog08()
         {
+            Task<int> task01 = new Task<int>(() =>
+            {
+                Console.WriteLine("Task exception előtt");
+                throw new Exception();
+            });
+
             try
             {
-                Task<int> task01 = Task<int>.Factory.StartNew(() =>
-                   {
-                       Console.WriteLine("Task exception előtt");
-                       throw new Exception();
-                   });
+                task01.Start();
                 Console.WriteLine($"{task01.Result}");                      // a Result lekéréskor újradobja a szálban keletkezett kivételt
             }
             catch (Exception ex)
@@ -227,33 +239,116 @@ namespace Investigate_Threading
 
 
         /// <summary>
-        /// QueueUserWorkItem
+        /// ThreadPool QueueUserWorkItem
         /// </summary>
         private static void Prog09()
         {
             ThreadPool.QueueUserWorkItem((object obj) =>
             {
-                Console.WriteLine($"Task exception előtt: {obj}");
-
+                Console.WriteLine($"QueueUserWorkItem exception előtt: {obj}");
             }, 123);
-
-
         }
 
 
         /// <summary>
-        /// QueueUserWorkItem Exception
+        /// ThreadPool QueueUserWorkItem Exception
         /// </summary>
         private static void Prog10()
         {
             ThreadPool.QueueUserWorkItem((object obj) =>
             {
-                Console.WriteLine("Task exception előtt ");
-                //throw new Exception();                                // QueueUserWorkItem-ben kezeletlen kivétel miatt leáll az alkalmazás!!!
+                Console.WriteLine("QueueUserWorkItem exception előtt ");
+                throw new Exception();                                // QueueUserWorkItem-ben kezeletlen kivétel miatt leáll az alkalmazás!!!
+            });
+        }
 
+
+        /// <summary>
+        /// Asynchronous delegate
+        /// </summary>
+        private static void Prog11()
+        {
+            Func<string, int> deleg = new Func<string, int>((string input) =>
+            {
+                return input.Length;
             });
 
+            AsyncCallback action = (IAsyncResult input) =>
+            {
+                Func<string, int> target = (Func<string, int>)input.AsyncState;
+                int result = target.EndInvoke(input);
+                Console.WriteLine(result);
+            };
+
+            IAsyncResult resuilt = deleg.BeginInvoke("input", action, deleg);           // BeginInvoke -> bevárja a resultot (ha még nincs kész), megkapja a resultot
         }
+
+
+        /// <summary>
+        /// Asynchronous delegate
+        /// </summary>
+        private static void Prog12()
+        {
+            Func<string, int> deleg = new Func<string, int>((string input) =>
+            {
+                throw new Exception();
+            });
+
+            AsyncCallback action = (IAsyncResult input) =>
+            {
+                Func<string, int> target = (Func<string, int>)input.AsyncState;
+                int result = target.EndInvoke(input);                               // itt újradobja az exception-t, ha nincs kezelve leáll az program
+                Console.WriteLine(result);
+            };
+            try
+            {
+                IAsyncResult resuilt = deleg.BeginInvoke("input", action, deleg);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception elkapva {ex.Message}");
+            }
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private static void Prog13()
+        {
+            BackgroundWorker bw = new BackgroundWorker();
+
+            bw.DoWork += Do_Work;
+            bw.RunWorkerCompleted += Work_Completed;
+            bw.ProgressChanged += ProgressChangedEventHandler;
+            bw.WorkerReportsProgress = true;                        // ezzel küld progress értesítéseket
+
+            bw.RunWorkerAsync("Hello to worker");
+        }
+
+        private static void Do_Work(object sender, DoWorkEventArgs e)
+        {
+            Console.WriteLine($"Worker started: {e.Argument}");
+
+            for (int i = 0; i < 100; i++)
+            {
+                if (i % 10 == 0)
+                {
+                    (sender as BackgroundWorker).ReportProgress(i);
+                }
+            }
+        }
+
+        private static void Work_Completed(object sender, RunWorkerCompletedEventArgs e)
+        {
+            Console.WriteLine($"Result: {e.Result}");
+        }
+
+        private static void ProgressChangedEventHandler(object sender, ProgressChangedEventArgs e)
+        {
+            Console.WriteLine($"Done: {e.ProgressPercentage} percent");
+        }
+
 
     }
 }
