@@ -23,7 +23,8 @@ namespace Investigate_Threading
             //Prog10();
             //Prog11();
             //Prog12();
-            Prog13();
+            //Prog13();
+            Prog14();
 
 
             Thread.Sleep(10000);
@@ -349,6 +350,14 @@ namespace Investigate_Threading
             Console.WriteLine($"Done: {e.ProgressPercentage} percent");
         }
 
+
+        /// <summary>
+        /// Lazy
+        /// </summary>
+        private static void Prog14()
+        {
+
+        }
 
     }
 }
