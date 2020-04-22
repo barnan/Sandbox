@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BD4805AE-0EB0-40A1-9567-2FDC7E768123}</ProjectGuid>
+    <ProjectGuid>{61BFB09F-96E7-430F-A9E4-E9BF68BF3C02}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Investigate_Threading</RootNamespace>
-    <AssemblyName>Investigate_Threading</AssemblyName>
+    <RootNamespace>Investigate_DesignPatterns</RootNamespace>
+    <AssemblyName>Investigate_DesignPatterns</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,14 +45,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Study_AssyncDelegate.cs" />
-    <Compile Include="Study_BackgroundWorker.cs" />
-    <Compile Include="Study_Lazy.cs" />
-    <Compile Include="Study_MemoryBarrier.cs" />
-    <Compile Include="Study_MonitorWaitPulse.cs" />
-    <Compile Include="Study_QueueUserWorkItem.cs" />
-    <Compile Include="Study_TaskAPI.cs" />
-    <Compile Include="Study_Thread.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
