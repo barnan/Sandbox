@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PrcoessRuntimeFromLog": {
+      "commandName": "Project",
+      "commandLineArgs": "input.txt"
+    }
+  }
+}
