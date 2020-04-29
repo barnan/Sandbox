@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 
 namespace PrcoessRuntimeFromLog
@@ -18,6 +19,7 @@ namespace PrcoessRuntimeFromLog
         ///         -> the search text itsef. In this case only one search text can be given. The output is stored in "output.csv" </param>
         static void Main(string[] args)
         {
+            string regexPattern = "[\\d]*ms$";
             string currentDirectoryPath = Directory.GetCurrentDirectory(); // Assembly.GetExecutingAssembly().Location;
 
             #region check input
@@ -28,6 +30,7 @@ namespace PrcoessRuntimeFromLog
                 Console.WriteLine("Number of input argments is not sufficient.");
                 return;
             }
+
             if (string.IsNullOrEmpty(args[0]) || string.IsNullOrWhiteSpace(args[0]))
             {
                 Console.WriteLine("The input argument is empty or consists of white spaces");
@@ -43,14 +46,14 @@ namespace PrcoessRuntimeFromLog
             Dictionary<string, ValueTuple<double, double, double, double, double>> timeStatistics;
 
             string outputFileName = "_";
-            if (!File.Exists(args[0]))          // the parameter is the search string itself
+            if (!File.Exists(args[0])) // the parameter is the search string itself
             {
                 outputFileName = "output.csv";
                 //listOfInputEntries = new List<string> { args[0] };
                 elapsedTimeCollection = new Dictionary<string, List<double>> { { args[0], new List<double>() } };
                 timeStatistics = new Dictionary<string, ValueTuple<double, double, double, double, double>>();
             }
-            else                                // the parameter is the name of a file containing the search strings
+            else // the parameter is the name of a file containing the search strings
             {
                 outputFileName = $"{Path.GetFileNameWithoutExtension(args[0])}_output.csv";
 
@@ -107,12 +110,15 @@ namespace PrcoessRuntimeFromLog
                         {
                             if (rowText.Contains(inputEntry))
                             {
-                                string[] rowElements = rowText.Split(" ");
+                                Match match = Regex.Match(rowText, regexPattern);
+                                int removeStart = match.Value.Length - 2;
+                                int removeLength = 2;
 
-                                if (double.TryParse(rowElements.Last(), out double eTime_ms))
+                                if (double.TryParse(match.Value.Remove(removeStart, removeLength), out double eTime_ms))
                                 {
                                     elapsedTimeCollection[inputEntry].Add(eTime_ms);
                                 }
+
                                 break;
                             }
                         }
@@ -124,9 +130,16 @@ namespace PrcoessRuntimeFromLog
 
             #endregion
 
-            #region statistical calculations
+            CalculateStatistics(elapsedTimeCollection, timeStatistics);
 
-            // calculate statistics:
+            SaveResult(outputFileName, elapsedTimeCollection, timeStatistics);
+
+            //Console.ReadKey();
+        }
+
+
+        private static void CalculateStatistics(Dictionary<string, List<double>> elapsedTimeCollection, Dictionary<string, ValueTuple<double, double, double, double, double>> timeStatistics)
+        {
             foreach (KeyValuePair<string, List<double>> pair in elapsedTimeCollection)
             {
                 if (pair.Value.Count < 1)
@@ -142,12 +155,11 @@ namespace PrcoessRuntimeFromLog
 
                 timeStatistics.Add(pair.Key, (min, max, average, median, std));
             }
+        }
 
-            #endregion
 
-            #region save result
-
-            // save output file:
+        private static void SaveResult(string outputFileName, Dictionary<string, List<double>> elapsedTimeCollection, Dictionary<string, ValueTuple<double, double, double, double, double>> timeStatistics)
+        {
             using (FileStream fs = new FileStream(outputFileName, FileMode.Create, FileAccess.Write))
             using (StreamWriter sw = new StreamWriter(fs))
             {
@@ -179,10 +191,6 @@ namespace PrcoessRuntimeFromLog
                     sw.WriteLine();
                 }
             }
-
-            #endregion
-
-            //Console.ReadKey();
         }
     }
 
@@ -204,8 +212,8 @@ namespace PrcoessRuntimeFromLog
                 //Put it all together
                 ret = Math.Sqrt(sum / count);
             }
+
             return ret;
         }
     }
-
 }
