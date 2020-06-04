@@ -9,6 +9,9 @@ namespace Enums
 
         static void Main(string[] args)
         {
+            Ember ember = new Ember();
+            ember.DoSomething();
+
             string text = "00000011";
 
             ErrorValues errorValue = (ErrorValues)Convert.ToInt32(text, 2);
@@ -20,7 +23,7 @@ namespace Enums
 
             if (valenum > ValamiEnnum.masik)
             {
-                Console.WriteLine("MNagyobb, mint masik");
+                Console.WriteLine("Nagyobb, mint masik");
             }
 
             Console.ReadKey();
@@ -32,8 +35,10 @@ namespace Enums
         {
             if (!Enum.IsDefined(typeof(ValamiEnnum), input))
             {
+
+                var elements = Enum.GetValues(typeof(ValamiEnnum));
                 //throw new ArgumentException("Not part of the value set.");
-                Console.WriteLine(input);
+                Console.WriteLine($"Not part of the enum elements: {input}. possible values: {string.Join(",", elements)}");
             }
             else
             {
