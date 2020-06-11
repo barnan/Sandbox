@@ -10,7 +10,7 @@ namespace DotNetCore
         {
             Console.WriteLine("Hello World!");
 
-            string path = Directory.GetParent(Assembly.GetExecutingAssembly().Location).FullName ;
+            string path = Directory.GetParent(Assembly.GetExecutingAssembly().Location).FullName;
 
             Ember ember = new Ember();
             ember.DoSomething();
