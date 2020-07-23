@@ -22,6 +22,14 @@ namespace Investigate_NumericData_Size
             Console.WriteLine($"double {sizeof(double)}");
             Console.WriteLine($"decimal {sizeof(decimal)}");
 
+            uint uszam = uint.MaxValue;
+
+            Console.WriteLine($"{uszam}");
+            Console.WriteLine($"{(int)uszam}");
+            Console.WriteLine($"{(uint)(int)uszam}");
+
+
+
             Console.ReadKey();
         }
     }
