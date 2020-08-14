@@ -4,8 +4,15 @@ namespace Investigate_NumericData_Size
 {
     class Program
     {
+
+        private static int y = x;
+        private static int x = 5;
+
+
         static void Main(string[] args)
         {
+            Question4();
+
             Console.WriteLine($"bool {sizeof(bool)}");
             Console.WriteLine($"byte {sizeof(byte)}");
             Console.WriteLine($"sbyte {sizeof(sbyte)}");
@@ -28,9 +35,12 @@ namespace Investigate_NumericData_Size
             Console.WriteLine($"{(int)uszam}");
             Console.WriteLine($"{(uint)(int)uszam}");
 
-
-
             Console.ReadKey();
+        }
+
+        public static void Question4()
+        {
+            Console.WriteLine(y);
         }
     }
 }
