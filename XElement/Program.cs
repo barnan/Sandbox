@@ -9,6 +9,20 @@ namespace XElementProj
 
         static XElement CreateXElement()
         {
+            XElement elementChild = new XElement("Cat");
+            elementChild.Add(new XAttribute("Name", "Mici"));
+            elementChild.Add(new XAttribute("Color", "Black"));
+
+            XElement element = new XElement("Cats");
+            element.Add(elementChild);
+
+            XDocument xDoc = new XDocument();
+            xDoc.Add();
+
+            xDoc.Save("MiciCica.xml");
+
+
+
             XElement element4 = new XElement("Level4", 50);
             XElement element3 = new XElement("Level3");
             element3.Add(element4);
