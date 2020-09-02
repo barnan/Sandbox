@@ -97,6 +97,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Investigate_NumericData_Siz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{F30D3E6E-2EF1-4664-B43E-118D0EDF629C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examine_Warnings_Pragma", "Examine_Warnings_Pragma\Examine_Warnings_Pragma.csproj", "{CA39F4D3-CBE2-4744-9B17-9DCD8FB46F22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -291,6 +293,10 @@ Global
 		{F30D3E6E-2EF1-4664-B43E-118D0EDF629C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F30D3E6E-2EF1-4664-B43E-118D0EDF629C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F30D3E6E-2EF1-4664-B43E-118D0EDF629C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA39F4D3-CBE2-4744-9B17-9DCD8FB46F22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA39F4D3-CBE2-4744-9B17-9DCD8FB46F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA39F4D3-CBE2-4744-9B17-9DCD8FB46F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA39F4D3-CBE2-4744-9B17-9DCD8FB46F22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
