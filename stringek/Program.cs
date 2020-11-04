@@ -38,7 +38,15 @@ namespace stringek
             Console.WriteLine(s.Equals("straße", StringComparison.CurrentCulture));
             Console.WriteLine(s.Equals("Straße", StringComparison.CurrentCultureIgnoreCase));
 
+           
+            string checkSumString = "Checksum=\"";
+            string input1 = "<Configuration ModifiedBy=\"SAM_SUITE, Version = 2.0.0.0\" Checksum=\"\">";
+            string[] lineParts = input1.Split(new string[] { checkSumString }, StringSplitOptions.RemoveEmptyEntries);
+
+            string newLine = $"{lineParts[0]} {checkSumString}kolikasmacska78{lineParts[1]}";
+
             Console.ReadKey();
+
         }
 
         static void Func1(string formatString, params object[] parameters)
