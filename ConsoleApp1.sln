@@ -101,6 +101,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examine_Warnings_Pragma", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Investigate_Static", "Investigate_Static\Investigate_Static.csproj", "{14ECB636-FA79-4BE8-8101-780D85BCAF95}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Investigate_Predicate", "Investigate_Predicate\Investigate_Predicate.csproj", "{505B1940-AF70-416C-AD59-A875E73B9FF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -303,6 +305,10 @@ Global
 		{14ECB636-FA79-4BE8-8101-780D85BCAF95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14ECB636-FA79-4BE8-8101-780D85BCAF95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14ECB636-FA79-4BE8-8101-780D85BCAF95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{505B1940-AF70-416C-AD59-A875E73B9FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{505B1940-AF70-416C-AD59-A875E73B9FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{505B1940-AF70-416C-AD59-A875E73B9FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{505B1940-AF70-416C-AD59-A875E73B9FF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
